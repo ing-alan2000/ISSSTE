@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ISSSTE Citas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo-circle">
+                <!-- Reemplaza 'logo.png' con la ruta de tu imagen de logo -->
+                <img src="img/ISSSTE1.webp" alt="Escudo ISSSTE">
+            </div>
+
+            <!-- Formulario de Login -->
+            <form action="login.php" method="POST" class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" name="id_carnet" placeholder="ID Carnet" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit" name="login">Iniciar Sesión</button>
+                <p>No tienes cuenta? <a href="register.php">Regístrate aquí</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
